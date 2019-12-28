@@ -16,7 +16,7 @@ public class App {
       .requestHandler(req -> {
         req.response().putHeader("content-type", "text/plain").end("Hello from Vert.x!");
       })
-      .rxListen(8000, "0.0.0.0");
+      .rxListen(80, "0.0.0.0");
 
     single.
       subscribe(
