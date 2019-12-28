@@ -38,7 +38,6 @@ dependencies {
 
 
 shadowJar {
-  minimize()
   manifest {
     attributes 'Main-Class': mainVerticleName
   }
